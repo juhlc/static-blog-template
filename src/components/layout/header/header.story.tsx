@@ -7,15 +7,15 @@ const story = storiesOf("Components|Layout", module);
 
 const data: MenuItem[] = [
   {
-    label: "Home",
+    label: "Hjem",
     href: "/",
   },
   {
-    label: "About",
+    label: "Om os",
     href: "/about/",
   },
   {
-    label: "Services",
+    label: "Produkter",
     dropdownItems: [
       {
         label: "Service A",
@@ -65,6 +65,6 @@ const data: MenuItem[] = [
   },
 ];
 
-const logo = <img className="w-auto h-15" src={icon} alt="Workflow" />;
+const logo = <img className="w-auto h-auto" src={icon} alt="Workflow" />;
 
 story.add("Header", () => <Header menuItems={data} logo={logo} />);
